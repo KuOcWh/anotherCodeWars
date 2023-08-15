@@ -1,0 +1,10 @@
+//In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+function highAndLow(numbers){
+  // ...
+  let splitAndSort = numbers.split(' ').sort((a, b) => a -b);
+  let lowest = splitAndSort[0]
+  let highestLen = splitAndSort.length - 1;
+  let highest = splitAndSort[highestLen];
+  return `${highest} ${lowest}`
+}
